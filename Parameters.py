@@ -1,13 +1,16 @@
 from Run import Run
 
-def Run():
+def Parameters():
 	print ("")
 	print ("CAPPTA S.A.")
 	print ("-----------")
-	print ("Fale algo para o Jelly..")
-	print ("")
+	options = ["1 - todas as vendas", "2 - vendas canceladas", "3 - vendas stone"]
+	print ("Diga algo..")
+	print (options)
 
-	result = Run(raw_input()) 
-	print (result)
+	while True:
+		request = input("Eu: ")
+		response = Run(request)
+		print ("Bot: " + response)
 
-Run()
+Parameters()

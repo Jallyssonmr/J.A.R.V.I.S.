@@ -1,14 +1,12 @@
 
 postsRequest = [ 
-	"me fale algo sobre o time do palmeiras",
-	"kkkk",
-	"e o time do sao paulo",
-	"e o time do santos"
+	"buscar merchant na falcon",
+	"buscar merchant id pelo cnpj no backoffice",
+	"pegar o merchat id do cnpj 19516471000176",
 ]
 
 postsResponse = [ 
-	"o palmeiras nao tem mundial",
-	"kkkk",
-	"tem medo de ir em itaquera",
-	"nada a falar de um time que nao incomoda ninguem"
+	"select * from falcon.merchant",
+	"select merchat id from backoffice.merchant where cnpj = @cnpj",
+	"select merchat id from merchant where cnpj = '19516471000176'"
 ]

@@ -1,7 +1,9 @@
 from sklearn import tree
+from sklearn.svm import SVC
 
 def DecisionTree():
 	classifier = tree.DecisionTreeClassifier()
+	clf = SVC()
 	return (classifier)
 
 def TrainModel(classifier, features, labels):
